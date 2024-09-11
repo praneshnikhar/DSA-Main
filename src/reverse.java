@@ -10,6 +10,7 @@ public class reverse {
             int rem = num %10;
             num /=10;
             ans = ans*10+rem;
+
         }
 
 
