@@ -36,6 +36,7 @@ public class calculator {
                 } else {
                     System.out.println("invlaid Operator");
                 }
+
                 System.out.println(ans);
             }
 
