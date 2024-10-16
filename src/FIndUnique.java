@@ -6,7 +6,7 @@ public class FIndUnique {
 
     private static int ans(int[] arr) {
         int unique = 0;
- 
+
         for (int n :arr) {
             unique  ^=n;
         }
