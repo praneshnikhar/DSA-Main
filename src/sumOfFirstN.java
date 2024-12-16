@@ -23,8 +23,9 @@ public class sumOfFirstN {
             for (int j = 1; j<= i; j++){
                 sum++;
             }
-            return sum ;
+
         }
+        return sum;
     }
 
 }
