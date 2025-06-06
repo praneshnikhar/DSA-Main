@@ -6,6 +6,7 @@ public class insertionSort{
         int[] arr= {5, 4, 3, 2, 1};
         insertion(arr);
         System.out.println(Arrays.toString(arr));
+
     }
 
     static void insertion(int[] arr){
