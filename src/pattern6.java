@@ -10,6 +10,7 @@ public class pattern6 {
             for (int col = 0 ; col < totalColsInRow; col++){
                 System.out.print("* ");
             }
+
             System.out.println();
         }
     }
