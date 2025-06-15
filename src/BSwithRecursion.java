@@ -8,6 +8,7 @@ public class BSwithRecursion {
         if(s > e){
             return -1;
         }
+        
 
         int m = s + (e-s)/2;
 
