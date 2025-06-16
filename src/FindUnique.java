@@ -8,7 +8,6 @@ public class FindUnique {
         int unique = 0;
         for(int n: arr){
             unique ^= n;
-
         }
 
         return unique;
