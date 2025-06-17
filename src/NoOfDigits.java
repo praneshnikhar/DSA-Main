@@ -6,5 +6,6 @@ public class NoOfDigits {
         System.out.println(ans);
         //here the complexity is log (n)
 
+
     }
 }
