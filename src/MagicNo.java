@@ -1,6 +1,6 @@
 public class MagicNo {
     public static void main(String[] args) {
-        int n = 6;
+        int n = 3;
         int ans = 0;
         int base = 5;
 
