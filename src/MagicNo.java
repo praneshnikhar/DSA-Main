@@ -4,6 +4,7 @@ public class MagicNo {
         int ans = 0;
         int base = 5;
 
+
         while(n>0)
         {
             int last = n & 1;
