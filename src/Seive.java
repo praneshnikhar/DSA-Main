@@ -9,6 +9,7 @@ public class Seive {
         for(int i = 2; i*i<=n;i++){
             if(!primes[i]){
 
+
             }
         }
     }
