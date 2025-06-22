@@ -8,8 +8,15 @@ public class Seive {
     static void sieve(int n, boolean[] primes){
         for(int i = 2; i*i<=n;i++){
             if(!primes[i]){
+                for (int j = 2* i; j <= n; j++) {
+                    primes[j] = true;
+                }
+            }
 
-
+        }
+        for (int i = 2; i <=n ; i++) {
+            if(primes[i]){
+                System.out.println(i+ " ");
             }
         }
     }
