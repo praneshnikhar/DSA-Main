@@ -7,7 +7,6 @@ public class ReverseOfNo {
         int rem = n%10 ;
         sum = sum * 10+rem;
         rev1(n/10);
-
     }
     static int rev2(int n){
 //        /soemtimes u might need some additiopnal vairables in the argument in that case make another function
