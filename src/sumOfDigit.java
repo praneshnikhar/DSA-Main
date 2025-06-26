@@ -4,6 +4,7 @@ public class sumOfDigit {
     int ans1 = prod(55);
         System.out.println(ans);
         System.out.println(ans1);
+
     }
     static int sum(int n ){
         if( n ==0 ){
