@@ -9,4 +9,5 @@ public class factorial {
         }
         return n * fact(n-1);
     }
+
 }
