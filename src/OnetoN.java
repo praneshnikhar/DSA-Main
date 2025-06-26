@@ -1,20 +1,15 @@
 public class OnetoN {
     public static void main(String[] args) {
-        funRev(5);
+        fun(6);
     }
+    
     static void fun(int n ){
         if(n == 0){
-            return ;
+            return;
         }
-        System.out.println(n);
-        fun(n-1);
+
+        for (int i = 1; i < n; i++) {
+            System.out.println(i);
+        }
     }
-
-    static void funRev(int n ){
-        if(n == 0){
-            return ;
-        }
-        funRev(n-1);
-        System.out.println(n);
-
-}}
+}
