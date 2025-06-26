@@ -11,3 +11,4 @@ public class Nto1 {
         fun(n-1);
     }
 }
+
