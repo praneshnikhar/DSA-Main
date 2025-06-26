@@ -12,3 +12,4 @@ public class Nto1rev {
         System.out.println(n);
     }
 }
+
