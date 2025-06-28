@@ -3,7 +3,7 @@ public class find {
         int[] arr = {1,2,3,4,5,6,7};
         System.out.println(find(arr, 5, 0));
         System.out.println(findIndex(arr, 5, 0));
-        System.out.println(find(arr, 5, 0));
+        System.out.println(findIndexLast(arr, 5, 0));
 
     }
 
@@ -23,6 +23,18 @@ public class find {
         }
         else{
             return findIndex(arr, target, index+1);
+        }
+    }
+
+    static int findIndexLast(int[] arr, int target, int index){
+        if(index == -1){
+            return -1;
+        }
+        if(arr[index] == target){
+            return index;
+        }
+        else{
+            return findIndexLast(arr, target, index-1);
         }
     }
 
