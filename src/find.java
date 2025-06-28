@@ -1,9 +1,13 @@
+import java.util.ArrayList;
+
 public class find {
     public static void main(String[] args) {
-        int[] arr = {1,2,3,4,5,6,7};
+        int[] arr = {1,2,3,4,4,5,6,7};
         System.out.println(find(arr, 5, 0));
         System.out.println(findIndex(arr, 5, 0));
         System.out.println(findIndexLast(arr, 5, 0));
+        findAllIndex(arr, 4, 0);
+        System.out.println(list);
 
     }
 
@@ -39,16 +43,15 @@ public class find {
         }
     }
 
-    static int findAllIndex(int[] arr, int target, int index){
+    static ArrayList<Integer> list = new ArrayList<>();
+    static void findAllIndex(int[] arr, int target, int index){
         if(index == arr.length){
-            return -1;
+            return ;
         }
         if(arr[index] == target){
-            return index;
+            list.add(index);
         }
-        else{
-            return findIndex(arr, target, index+1);
-        }
+        findIndex(arr, target, index+1);
     }
 
 }
