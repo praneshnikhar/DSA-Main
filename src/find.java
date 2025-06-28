@@ -39,4 +39,16 @@ public class find {
         }
     }
 
+    static int findAllIndex(int[] arr, int target, int index){
+        if(index == arr.length){
+            return -1;
+        }
+        if(arr[index] == target){
+            return index;
+        }
+        else{
+            return findIndex(arr, target, index+1);
+        }
+    }
+
 }
