@@ -33,6 +33,7 @@ public class find {
         if(arr[index] == target){
             return index;
         }
+
         else{
             return findIndexLast(arr, target, index-1);
         }
