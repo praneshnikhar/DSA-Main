@@ -9,6 +9,7 @@ public class find {
         findAllIndex(arr, 4, 0);
         System.out.println(list);
 
+
     }
 
     static boolean find(int[] arr, int target, int index){
