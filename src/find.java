@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class find {
     public static void main(String[] args) {
@@ -9,8 +10,9 @@ public class find {
         findAllIndex(arr, 4, 0);
         System.out.println(list);
 
-
-    }
+        ArrayList<Integer> ans = findAllIndex(arr, 4, 0 , new ArrayList<>());
+        System.out.println(ans);
+        }
 
     static boolean find(int[] arr, int target, int index){
         if(index == arr.length){
@@ -63,7 +65,7 @@ public class find {
         if(arr[index] == target){
             list.add(index);
         }
-      return findIndex(arr, target, index+1, list);
+      return findAllIndex(arr, target, index+1, list);
     }
 
 }
