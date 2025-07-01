@@ -13,7 +13,7 @@ public class find {
 //
 //        ArrayList<Integer> ans = findAllIndex(arr, 4, 0 , new ArrayList<>());
 //        System.out.println(ans);
-
+        System.out.println(findAllIndex2(arr, 4, 0));
 
         }
 
