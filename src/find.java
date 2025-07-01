@@ -55,4 +55,15 @@ public class find {
         findIndex(arr, target, index+1);
     }
 
+
+    static ArrayList<Integer> findAllIndex(int[] arr, int target, int index,ArrayList<Integer> list){
+        if(index == arr.length){
+            return list;
+        }
+        if(arr[index] == target){
+            list.add(index);
+        }
+      return findIndex(arr, target, index+1, list);
+    }
+
 }
