@@ -4,6 +4,7 @@ public class RotatedBinaryS {
         System.out.println(search(arr, 8, 0, arr.length-1));
     }
 
+
     static int search(int[] arr, int target, int s, int e){
         if(s>e){
             return -1;
