@@ -2,7 +2,10 @@ import java.util.Arrays;
 
 public class mergeSort {
     public static void main(String[] args) {
-
+        int[] arr= {5,4,3,2,1};
+        int[] ans = mergeSort(arr);
+        arr = mergeSort(arr);
+        System.out.println(Arrays.toString(arr));
     }
     static int[] mergeSort(int[] arr){
         if(arr.length ==0){
@@ -32,5 +35,22 @@ public class mergeSort {
             }
             k++;
         }
+
+        //it may be possible that one f the array is not finished
+        // so add all the elements in the array
+
+        //copy the remaining elements
+
+        while( i < first.length){
+            mix[k] = first[i];
+            i++;
+            k++;
+        }
+        while( j < second.length){
+            mix[k] = second[j];
+            j++;
+            k++;
+        }
+        return mix;
     }
 }
