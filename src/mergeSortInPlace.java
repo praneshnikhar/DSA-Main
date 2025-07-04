@@ -3,8 +3,8 @@ import java.util.Arrays;
 public class mergeSortInPlace {
     public static void main(String[] args) {
         int[] arr= {5,4,3,2,1};
-        int[] ans = mergeSortInPlace(arr);
-        arr = mergeSortInPlace(arr);
+
+        mergeSortInPlace(arr, 0 , arr.length-1);
         System.out.println(Arrays.toString(arr));
     }
     static void mergeSortInPlace(int[] arr, int s , int e){
@@ -18,7 +18,7 @@ public class mergeSortInPlace {
 
         mergeInPlace(arr, s , mid , e);
     }
-    private static int[] mergeInPlace(int[] arr, int s, int m , int e){
+    private static void mergeInPlace(int[] arr, int s, int m , int e){
         int[] mix = new int[e-s];
 
         int i = s;
@@ -51,6 +51,8 @@ public class mergeSortInPlace {
             j++;
             k++;
         }
-        return mix;
+
+        System.arraycopy(mix, 0, arr, s + 0, mix.length);
+
     }
 }
