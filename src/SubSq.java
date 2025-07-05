@@ -3,10 +3,12 @@ import java.util.ArrayList;
 public class SubSq {
     public static void main(String[] args) {
 //        subseq("", "abc");
-        System.out.println(subSeqReturn("", "abc"));
+//        System.out.println(subSeqReturn("", "abc"));
+        subseqAscii("", "abc");
 
 
     }
+
     static void subseq(String p , String up){
         if(up.isEmpty()){
             System.out.println(p);
@@ -33,6 +35,17 @@ public class SubSq {
         left.addAll(right);
         return left;
 
+    }
+    static void subseqAscii(String p , String up){
+        if(up.isEmpty()){
+            System.out.println(p);
+            return;
+        }
+
+        char ch = up.charAt(0);
+        subseqAscii(p+ch, up.substring(1));
+        subseqAscii(p, up.substring(1));
+        subseqAscii(p+(ch+0), up.substring(1));
     }
 
 }
