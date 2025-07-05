@@ -1,4 +1,4 @@
-class Solution {
+class Solution1 {
     public String addBinary(String a, String b) {
         char[] charArrA = a.toCharArray();
         char[] charArrB = b.toCharArray();

@@ -1,4 +1,8 @@
-class Solution {
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Stack;
+
+class Solution6 {
     public boolean isValid(String s) {
         Stack<Character> stack = new Stack<>();
         Map<Character, Character> mapping = new HashMap<>();
