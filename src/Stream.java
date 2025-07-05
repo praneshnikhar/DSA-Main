@@ -1,6 +1,6 @@
 public class Stream {
     public static void main(String[] args) {
-
+        System.out.println(skip("baccdah"));
     }
     static void skip(String p, String up){
         if(up.isEmpty()){
@@ -24,7 +24,7 @@ public class Stream {
         if(ch =='a'){
            return skip(up.substring(1));
         }else{
-           return skip(up.substring(1));
+           return ch+ skip(up.substring(1));
         }
     }
 }
