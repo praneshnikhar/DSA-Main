@@ -31,6 +31,7 @@ public class quickSort {
                 s++;
                 e--;
             }
+
         }
 
         //now my pivot is at corect index please sort two halves now;
