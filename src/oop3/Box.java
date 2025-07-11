@@ -1,6 +1,7 @@
 package oop3;
 
 public class Box {
+    double weight;
     double l;
     double w;
     double h;
@@ -13,6 +14,9 @@ public class Box {
 
     //cube
     Box(double side){
+
+        super();//object class
+
         this.w = side;
         this.l= side;
         this.h= side;
