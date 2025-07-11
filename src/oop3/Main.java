@@ -18,7 +18,9 @@ public class Main {
         //but here when the object itself is of type parent class how will you vcall the constructor of child class?
         //this is why error
 
-        BoxWeight box6 = new Box(2,3,4);
-        System.out.println(box6);
+//        BoxWeight box6 = new Box(2,3,4);
+//        System.out.println(box6);
+
+        BoxPrice box = new BoxPrice(5,8,100);
     }
 }
