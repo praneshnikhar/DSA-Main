@@ -14,6 +14,10 @@ public class Main {
         //there are many variables in both parent and child classes
         //you are given acces to variables that are in the ref type i.e boxweight
         ///hence, you should have access to weight variable
+        //this also means , that the ones you are trying to access  should be initailiased
+        //but here when the object itself is of type parent class how will you vcall the constructor of child class?
+        //this is why error
+
         BoxWeight box6 = new Box(2,3,4);
         System.out.println(box6);
     }
