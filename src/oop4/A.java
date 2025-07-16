@@ -1,9 +1,10 @@
 package oop4;
 
 public class A {
-    private int num;
+    protected int num;
     String name;
     int[] arr;
+
 
     public int getNum(){
         return num;
