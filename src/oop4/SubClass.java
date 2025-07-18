@@ -10,5 +10,7 @@ public class SubClass extends A{
         SubClass obj = new SubClass(45, "pranesh");
         int n = obj.num;
 
+        System.out.println(obj instanceof A);
+
     }
 }
